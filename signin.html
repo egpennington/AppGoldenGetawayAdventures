@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0";>
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta name="description" content="Welcome to guided day tours for the elderly of Gaveston Texas">
+  <meta name="keywords" content="html, css, JavaScript, Maomo, Gaveston, Elderly, Day tours, Hackathon">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/stylesign.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css"> -->
+  <title>Golden Getaway Adventures</title>
+</head>
+
+<body>
+    <section id="logged-out-view">
+        <div class="container">
+            <h1 class="app-title">Bailey's Moods</h1>
+            
+            <div class="provider-buttons">
+                <button id="sign-in-with-google-btn" class="provider-btn">
+                    <img src="assets/providers/google.png" class="google-btn-logo">
+                    Sign in with Google
+                </button>
+            </div>
+            
+            <div class="auth-fields-and-buttons">
+                <input id="email-input" type="email" placeholder="Email">
+                <input id="password-input" type="password" placeholder="Password">
+                
+                <button id="sign-in-btn" class="primary-btn">Sign in</button>
+                <button id="create-account-btn" class="secondary-btn">Create Account</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="logged-in-view">
+        <div class="container">
+
+            <nav>
+                <button id="sign-out-btn" class="icon-btn">
+                    <i class="fa-solid fa-right-from-bracket fa-3x" class="icon-img-btn"></i>
+                </button>
+            </nav>
+
+            <div class="app-container">
+                <div class="user-section">
+                    <img id="user-profile-picture">
+                    <h2 id="user-greeting"></h2>
+                </div>
+
+                <div class="post-section">
+                    <textarea id="post-input" placeholder="Write down how you're feeling..."></textarea>
+                    <button id="post-btn" class="primary-btn">Post</button>
+                </div>
+                <img src="https://media.giphy.com/media/AUMxbiDIzBOiFGA71r/giphy.gif" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>
